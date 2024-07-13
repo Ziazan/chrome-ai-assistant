@@ -1,0 +1,16 @@
+#chrome-ai-button{
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px -2px rgba(81, 87, 103, .16);
+    cursor: pointer;
+    img{
+        width: 30px;
+        width: 30px;
+    }
+}

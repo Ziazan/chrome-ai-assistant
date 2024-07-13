@@ -12,6 +12,7 @@
     "content_scripts": [
        {
          "matches": ["http://*/*","https://*/*"],
+         "css":["content.css"],
          "js": ["content_script.js"]
        }
      ]
