@@ -1,6 +1,6 @@
 /*
  * @Date: 2024-07-15 21:11:32
- * @LastEditTime: 2024-07-17 21:59:30
+ * @LastEditTime: 2024-07-17 22:47:57
  * @Description: 请填写简介
  */
 const CopyWebpackPlugin = require ('copy-webpack-plugin');
@@ -71,6 +71,12 @@ module.exports = {
     if (process.env.NODE_ENV === 'production') {
       config.output.filename ('js/[name].js').end ();
       config.output.chunkFilename ('js/[name].js').end ();
+      config.module
+      .rule('less')
+      .test(/\.less$/)
+      .use('less-loader')
+      .loader('less-loader')
+      .end();
       config.module
         .rule ('fonts')
         .test (/\.(ttf|otf|eot|woff|woff2)$/)

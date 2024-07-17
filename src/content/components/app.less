@@ -1,0 +1,174 @@
+#chrome-ai-button{
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px -2px rgba(81, 87, 103, .16);
+    cursor: pointer;
+    img{
+        width: 30px;
+        width: 30px;
+    }
+}
+
+.chat-assistant{
+    width: 350px;
+    position: fixed;
+    display: flex;
+    z-index: 1001;
+    box-sizing: border-box;
+    padding: 12px 24px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 12px;
+    gap: 12px;
+    right: 14px;
+    bottom: 14px;
+    top: calc(60px + 1.767rem);
+    background-image: url(//lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/086a891665bdd751f339293cc0d75038.svg),url(//lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/img/bgc2.1e5526a.png),linear-gradient(173deg,#f4f9ff -24.94%,#edf1f9 103.15%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-attachment: fixed;
+    background-size: auto;
+    border-radius: 4px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .039px;
+    box-shadow: 0 32px 60px 0 rgba(81,87,103,.12)
+}
+.header-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .close-icon {
+        cursor: pointer
+    }
+
+    .left {
+        grid-gap: 3.17px;
+        gap: 3.17px
+    }
+}
+
+.chat-main{
+    position: relative;
+    flex: auto;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.message-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    grid-gap: 20px;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    color: #0c0d0e;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: .039px
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    .user-card{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        color: #fff;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: .039px;
+        .message{
+            display: flex;
+            flex-direction: column;
+            padding: 8px 12px;
+            border-radius: 12px 0 12px 12px;
+            background: #0082ff;
+        }
+    }
+
+    .ai-card{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 8px;
+        gap: 8px;
+        width: 100%;
+        .message-info{
+            padding: 12px;
+            min-height: 22px;
+            border-radius: 0 12px 12px 12px;
+            background: #fff;
+            color: #2f2f2f;
+            font-size: 13px;
+            line-height: 24px !important;
+            .message{
+                p{
+                    margin: 10px 0 !important;
+                }
+            }
+        }
+    }
+}
+.edit-container{
+    position: relative;
+    width: 100%;
+    padding: 1px;
+    background: radial-gradient(circle at 0,at 0,rgba(83,140,255,.5),rgba(0,102,255,.5),rgba(123,2,197,.5),rgba(255,125,60,.5),rgba(255,165,60,.5));
+    background: radial-gradient(circle at 0 0,rgba(83,140,255,.5),rgba(0,102,255,.5),rgba(123,2,197,.5),rgba(255,125,60,.5),rgba(255,165,60,.5));
+    box-sizing: border-box;
+    border-radius: 8px;
+    .main{
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+        border-radius: 7px;
+        padding: .5rem 1rem;
+        box-sizing: border-box;
+        .input{
+            color: var(--juejin-font-1);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: .039px;
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            vertical-align: middle;
+            padding: 0;
+            overflow-y: hidden scroll;
+        }
+        .icon{
+            cursor: pointer;
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            margin-left: 1rem;
+            background: url(//lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/983a66878ce3e773ef1a30f855e45894.svg) no-repeat 50%;
+        }
+    }
+}
