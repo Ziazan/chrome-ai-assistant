@@ -1,6 +1,6 @@
 <!--
  * @Date: 2024-07-15 21:11:32
- * @LastEditTime: 2024-07-16 22:04:53
+ * @LastEditTime: 2024-07-17 22:07:36
  * @Description: 请填写简介
 -->
 <template>
@@ -15,7 +15,7 @@
   
   <script lang="ts" setup>
   import {ref,onMounted,onUnmounted} from 'vue';
-  const LOGO = 'https://img.icons8.com/?size=48&id=59023&format=png'
+  import LOGO from '@/assets/images/logo.png';
   const BTN_IMG_ID = 'ai-btn-img';
 
   const buttonStyle = ref({})

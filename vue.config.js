@@ -1,6 +1,6 @@
 /*
  * @Date: 2024-07-15 21:11:32
- * @LastEditTime: 2024-07-15 21:47:26
+ * @LastEditTime: 2024-07-17 21:59:30
  * @Description: 请填写简介
  */
 const CopyWebpackPlugin = require ('copy-webpack-plugin');
@@ -53,6 +53,11 @@ module.exports = {
     },
     output: {
       filename: 'js/[name].js',
+    },
+    resolve:{
+      alias:{
+        '@': path.resolve(__dirname,'src'),
+      }
     },
     plugins,
   },
